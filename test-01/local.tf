@@ -3,3 +3,10 @@ resource "local_file" "mypets" {
   content  = "We love pets"
 
 }
+
+resource "random_pets" "my-pets" {
+  prefix    = "Mrs"
+  separator = "."
+  length    = "1"
+
+}
